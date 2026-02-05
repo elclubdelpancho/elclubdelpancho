@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.menu-container {
+    width: 1080px;
+    height: 1920px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.85)), 
+                      url('https://64.media.tumblr.com/c05d5dae7935b7b636c4bbef276741e9/c8d0113eafe612e7-c4/s1280x1920/3147f42be14390b21c273cd65eee432d6c808400.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    /* MARCO ROJO CON DEGRADADO BLANCO */
+    border: 20px solid;
+    border-image: linear-gradient(to bottom, #d32f2f, #ffffff, #d32f2f) 1;
+    
+    border-radius: 40px;
+    padding: 40px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 8px solid #d5ba30;
+    background-image: url('https://64.media.tumblr.com/c05d5dae7935b7b636c4bbef276741e9/c8d0113eafe612e7-c4/s1280x1920/3147f42be14390b21c273cd65eee432d6c808400.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-title {
+    font-family: 'Impact', sans-serif;
+    font-size: 75px;
+    color: #d32f2f;
+    text-shadow: 2px 2px 0 #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.menu-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-family: 'Impact', sans-serif;
+    font-size: 55px;
+    color: #ffeb3b;
+    border-bottom: 4px dotted #d32f2f;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    color: #ffffff; 
+    font-size: 42px; 
+    font-family: 'Arial Black', sans-serif;
+}
+
+.dots {
+    flex-grow: 1;
+    border-bottom: 4px dotted #ffeb3b; 
+    margin: 0 15px;
+}
+
+.item-price {
+    color: #ffffff; 
+    font-size: 42px; 
+    font-family: 'Impact', sans-serif;
+    min-width: 160px;
+    text-align: right;
+}
+
+.item-description {
+    color: #ffffff; 
+    font-size: 32px; 
+    font-style: italic;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 5px dashed #d32f2f;
+}
+
+.hashtag {
+    font-family: 'Impact', sans-serif;
+    font-size: 45px;
+    color: #ffeb3b;
+}
+
+.footer p:last-child {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
